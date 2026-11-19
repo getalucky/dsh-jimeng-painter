@@ -1,0 +1,67 @@
+{
+  "name": "dsh-jimeng-painter",
+  "version": "0.3.0",
+  "description": "把即梦网页版生图接进 DeepSeek Harness：agent 调用 jimeng_paint，可选即梦网页里的 Seedream/ImageMax 模型、比例、清晰度和张数，直接拿到本地原图。带设置页（DSH 设置 → 即梦生图）可下拉选默认模型并实时刷新页面上的可用模型。基于 CDP 驱动 Edge 独立 profile，不需要 API Key。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "jimeng",
+    "即梦",
+    "seedream",
+    "text-to-image",
+    "image-generation",
+    "cdp"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./bridge": "./lib/bridge.mjs",
+    "./models": "./lib/models.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "paint": "node tools/paint.mjs",
+    "test": "node --test tests/plugin.test.mjs",
+    "test:settings": "node --test tests/settings.test.mjs",
+    "test:client": "node --test tests/client.test.mjs",
+    "test:webapi": "node --test tests/webapi.test.mjs",
+    "test:apply": "node --test tests/apply.test.mjs",
+    "test:prompt": "node --test tests/prompt.test.mjs",
+    "test:all": "node --test tests/plugin.test.mjs tests/settings.test.mjs tests/client.test.mjs tests/webapi.test.mjs tests/apply.test.mjs tests/prompt.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getalucky/dsh-jimeng-painter.git"
+  },
+  "homepage": "https://github.com/getalucky/dsh-jimeng-painter#readme",
+  "bugs": {
+    "url": "https://github.com/getalucky/dsh-jimeng-painter/issues"
+  }
+}

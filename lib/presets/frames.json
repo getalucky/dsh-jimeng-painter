@@ -1,0 +1,306 @@
+{
+  "lens": {
+    "wide-16": {
+      "label": "16mm 超广角",
+      "phrase": "16mm 超广角镜头，强烈空间拉伸与近大远小透视",
+      "keywords": ["16mm", "超广角"]
+    },
+    "wide-24": {
+      "label": "24mm 广角",
+      "phrase": "24mm 广角镜头，宽阔视野与明显空间纵深感",
+      "aliases": ["广角"],
+      "keywords": ["24mm", "广角"]
+    },
+    "wide-35": {
+      "label": "35mm 广角纪实",
+      "phrase": "35mm 广角纪实镜头，环境与主体兼顾，轻微透视",
+      "keywords": ["35mm"]
+    },
+    "standard-50": {
+      "label": "50mm 标准",
+      "phrase": "50mm 标准镜头，接近人眼视角，自然无畸变",
+      "aliases": ["标准"],
+      "keywords": ["50mm", "标准镜头"]
+    },
+    "portrait-85": {
+      "label": "85mm 人像",
+      "phrase": "85mm 中长焦人像镜头，背景虚化干净，主体突出",
+      "aliases": ["人像"],
+      "keywords": ["85mm"]
+    },
+    "tele-135": {
+      "label": "135mm 长焦",
+      "phrase": "135mm 长焦镜头，空间压缩感强，背景干净通透",
+      "aliases": ["长焦"],
+      "keywords": ["135mm"]
+    },
+    "tele-200": {
+      "label": "200mm 超长焦",
+      "phrase": "200mm 超长焦镜头，强烈空间压缩与远摄感",
+      "keywords": ["200mm"]
+    },
+    "product-100": {
+      "label": "100mm 产品",
+      "phrase": "100mm 中长焦镜头，细节清晰锐利，背景干净虚化",
+      "aliases": ["产品镜头"],
+      "keywords": ["100mm"]
+    },
+    "macro": {
+      "label": "微距",
+      "phrase": "100mm 微距镜头，细节特写，极浅景深",
+      "keywords": ["微距", "macro"]
+    },
+    "tilt-shift": {
+      "label": "移轴",
+      "phrase": "移轴镜头，微缩景观效果",
+      "keywords": ["移轴"]
+    },
+    "fisheye": {
+      "label": "鱼眼",
+      "phrase": "鱼眼镜头，夸张广角畸变",
+      "keywords": ["鱼眼"]
+    }
+  },
+  "shot": {
+    "closeup": {
+      "label": "面部特写",
+      "phrase": "面部特写，肩部以上",
+      "keywords": ["特写", "面部"]
+    },
+    "medium-close": {
+      "label": "近景胸像",
+      "phrase": "近景胸像，肩部以上取景",
+      "keywords": ["近景", "胸像", "半身"]
+    },
+    "medium": {
+      "label": "中景半身",
+      "phrase": "中景，主体约占画面一半，环境可辨",
+      "keywords": ["中景", "七分身"]
+    },
+    "full": {
+      "label": "全景全身",
+      "phrase": "全景，主体完整入镜，保留环境",
+      "keywords": ["全景", "全身"]
+    },
+    "wide": {
+      "label": "远景环境",
+      "phrase": "远景，主体与完整环境同框，交代空间关系",
+      "keywords": ["远景", "大远景"]
+    },
+    "detail": {
+      "label": "局部细节",
+      "phrase": "局部细节特写，材质与纹理清晰",
+      "keywords": ["局部", "细节"]
+    }
+  },
+  "angle": {
+    "eye-level": {
+      "label": "平视平拍",
+      "phrase": "平视平拍，正常人眼高度，自然真实",
+      "keywords": ["平视", "平拍", "人眼视角"]
+    },
+    "low": {
+      "label": "低角度仰拍",
+      "phrase": "低角度仰拍，主体更挺拔有气势",
+      "keywords": ["仰拍", "仰视", "低角度"]
+    },
+    "high": {
+      "label": "高角度俯拍",
+      "phrase": "高角度俯拍，收纳更多环境，脸更小",
+      "keywords": ["俯拍", "俯视", "高角度"]
+    },
+    "three-quarter": {
+      "label": "四分之三侧脸",
+      "phrase": "四分之三侧脸，立体感自然",
+      "keywords": ["四分之三", "侧脸"]
+    },
+    "over-shoulder": {
+      "label": "过肩视角",
+      "phrase": "过肩视角，第三人称代入感",
+      "keywords": ["过肩"]
+    },
+    "pov": {
+      "label": "第一人称",
+      "phrase": "第一人称主观视角，强代入感",
+      "keywords": ["第一人称", "主观视角", "POV"]
+    },
+    "bird-eye": {
+      "label": "上帝视角",
+      "phrase": "上帝视角鸟瞰，完整空间关系",
+      "keywords": ["鸟瞰", "上帝视角", "航拍"]
+    },
+    "side": {
+      "label": "正侧拍",
+      "phrase": "正侧拍，轮廓清晰，明暗关系明确",
+      "keywords": ["正侧", "侧拍"]
+    },
+    "side-45": {
+      "label": "45° 斜侧角",
+      "phrase": "45° 斜侧角度，轮廓与立体感清晰",
+      "aliases": ["45°斜侧"],
+      "keywords": ["45度", "斜侧"]
+    }
+  },
+  "composition": {
+    "rule-of-thirds": {
+      "label": "三分法构图",
+      "phrase": "三分法构图，主体位于三分线交点",
+      "keywords": ["三分法", "井字"]
+    },
+    "centered": {
+      "label": "居中构图",
+      "phrase": "居中构图，主体位于画面中心",
+      "aliases": ["居中"],
+      "keywords": ["居中构图", "中心构图", "主体居中"]
+    },
+    "symmetry": {
+      "label": "对称构图",
+      "phrase": "对称构图，中轴左右均衡",
+      "aliases": ["对称"],
+      "keywords": ["对称构图", "镜像对称"]
+    },
+    "frame-in-frame": {
+      "label": "框架式构图",
+      "phrase": "框架式构图，用门窗或前景形成天然画框",
+      "aliases": ["框架"],
+      "keywords": ["框架构图", "画框", "门洞"]
+    },
+    "leading-lines": {
+      "label": "引导线构图",
+      "phrase": "引导线构图，线条把视线引向主体",
+      "keywords": ["引导线", "视线引导"]
+    },
+    "diagonal": {
+      "label": "对角线构图",
+      "phrase": "对角线构图，画面更有动态张力",
+      "keywords": ["对角线", "斜线构图"]
+    },
+    "s-curve": {
+      "label": "S 型构图",
+      "phrase": "S 型曲线构图，视线柔缓延伸",
+      "keywords": ["S 型", "S型", "曲线构图"]
+    },
+    "foreground-bokeh": {
+      "label": "前景虚化",
+      "phrase": "前景轻微虚化，增加空间层次",
+      "keywords": ["前景虚化", "前景遮挡", "前景散景"]
+    },
+    "negative-space": {
+      "label": "留白构图",
+      "phrase": "大面积留白，画面简洁有呼吸感",
+      "keywords": ["留白", "负空间"]
+    },
+    "full-bleed": {
+      "label": "满版构图",
+      "phrase": "主体填满画面，强化细节冲击",
+      "keywords": ["满版", "填充画面"]
+    },
+    "candid": {
+      "label": "生活化抓拍",
+      "phrase": "生活化自然抓拍构图，轻微松散不刻意",
+      "keywords": ["抓拍", "生活化", "自然排布"]
+    }
+  },
+  "lighting": {
+    "golden-hour": {
+      "label": "黄金时刻",
+      "phrase": "黄金时刻低角度暖光，柔和金色轮廓",
+      "keywords": ["黄金时刻", "日落暖光", "清晨低角度"]
+    },
+    "blue-hour": {
+      "label": "蓝调时刻",
+      "phrase": "蓝调时刻冷色环境光，暮色柔和",
+      "keywords": ["蓝调时刻", "暮色冷光"]
+    },
+    "overcast": {
+      "label": "阴天漫射光",
+      "phrase": "阴天均匀漫射光，阴影过渡柔和",
+      "keywords": ["阴天", "漫射光", "均匀柔光"]
+    },
+    "window": {
+      "label": "窗边柔光",
+      "phrase": "窗边侧向柔光，自然明暗过渡",
+      "keywords": ["窗边", "窗户", "侧窗"]
+    },
+    "tyndall": {
+      "label": "丁达尔光束",
+      "phrase": "丁达尔光束，空气中有可见光柱与浮尘",
+      "keywords": ["丁达尔", "光束", "光柱"]
+    },
+    "softbox": {
+      "label": "柔光箱补光",
+      "phrase": "柔光箱侧前方补光，光线均匀，质感干净",
+      "keywords": ["柔光箱", "环形补光", "侧方柔光"]
+    },
+    "practical": {
+      "label": "生活光源",
+      "phrase": "暖色台灯与室内生活光源，真实生活感",
+      "keywords": ["台灯", "落地灯", "烛光", "室内暖灯"]
+    },
+    "neon": {
+      "label": "霓虹混合光",
+      "phrase": "霓虹灯与橱窗混合光，冷暖对比",
+      "keywords": ["霓虹", "橱窗光", "路灯光斑"]
+    },
+    "mixed": {
+      "label": "冷暖混合光",
+      "phrase": "窗边自然光混合室内暖灯，冷暖对比",
+      "keywords": ["混合光", "冷暖对比", "多光源"]
+    },
+    "rembrandt": {
+      "label": "伦勃朗光",
+      "phrase": "伦勃朗布光，单侧脸颊三角亮斑",
+      "keywords": ["伦勃朗", "三角光"]
+    },
+    "butterfly": {
+      "label": "蝴蝶光",
+      "phrase": "蝴蝶光，正面高位柔光，鼻下蝴蝶形阴影",
+      "keywords": ["蝴蝶光"]
+    },
+    "loop": {
+      "label": "环形光",
+      "phrase": "环形布光，自然立体的面部明暗",
+      "keywords": ["环形光", "环形布光"]
+    },
+    "rim": {
+      "label": "逆光轮廓光",
+      "phrase": "逆光轮廓光，发丝与边缘透亮",
+      "keywords": ["逆光", "轮廓光", "发丝光"]
+    },
+    "side-45": {
+      "label": "45° 斜侧光",
+      "phrase": "45° 斜侧光，立体感强",
+      "keywords": ["45°", "斜侧光", "前侧光"]
+    },
+    "hard": {
+      "label": "直射硬光",
+      "phrase": "直射硬光，阴影边缘清晰锐利",
+      "keywords": ["硬光", "直射光"]
+    },
+    "soft": {
+      "label": "大面积柔光",
+      "phrase": "大面积柔光，阴影过渡自然",
+      "keywords": ["柔光", "软光"]
+    },
+    "top": {
+      "label": "顶部柔光",
+      "phrase": "顶部柔光，天花板漫射",
+      "keywords": ["顶光", "顶部光"]
+    },
+    "front": {
+      "label": "正面顺光",
+      "phrase": "正面顺光，均匀面光，细节清晰",
+      "keywords": ["顺光", "正面光", "均匀面光"]
+    },
+    "side-90": {
+      "label": "90° 正侧光",
+      "phrase": "90° 正侧光，明暗各半，戏剧感强",
+      "keywords": ["正侧光", "90°", "侧方硬光"]
+    },
+    "bottom": {
+      "label": "底部补光",
+      "phrase": "底部补光，下方柔光，戏剧感强",
+      "keywords": ["底光", "底部补光"]
+    }
+  }
+}

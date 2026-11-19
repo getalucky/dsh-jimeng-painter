@@ -1,0 +1,35 @@
+# ============================================================================
+# dsh-jimeng-painter —— DSH bundle patch
+# ============================================================================
+# 安装（本地开发，link 到源码目录）：
+#   dsh plugin --profile desktop add "link:D:\dsh-plugins\dsh-jimeng-painter"
+# 然后在 profile 的 package.json 的 dsh.profile.bundles 里加入
+# "dsh-jimeng-painter"，重启 DSH 生效。
+# ============================================================================
+
+- insert:
+    - id: dsh-jimeng-painter
+      name: dsh-jimeng-painter
+      config:
+        enabled: true
+        # Edge 的 CDP 调试端口；插件会自动用这个端口拉起 Edge
+        cdpPort: 9335
+        # Edge 路径；留空自动找系统安装的 Edge
+        edgeExe: ''
+        # 独立 Edge profile。当前机器复用探针里已登录的 profile3；
+        # 换机器请改成自己的路径，首次打开即梦扫码登录。
+        profileDir: 'D:\DSH\dsh-fish\home\jimeng-probe\profile3'
+        # 单次生成等待上限（毫秒）；5.5 模型通常 30~90 秒
+        timeoutMs: 300000
+        # 图片默认落在会话工作区的这个子目录
+        outSubdir: jimeng-images
+        # 默认模型 / 比例 / 清晰度 / 张数 / 风格；工具调用时可以单次覆盖。
+        # DSH 设置 → 即梦生图 里改的就是下面这五行（会写回这个文件）。
+        defaultModel: 'Seedream 4.7'
+        defaultRatio: '4:3'
+        defaultResolution: '2K'
+        defaultCount: 1
+        # auto 按提示词自动选；off 原样送即梦；也可填 cinematic / portrait / film / guofeng 等风格 id
+        defaultStyle: 'auto'
+        # 打开后工具调用里的模型/比例/清晰度/张数/风格全部不作数，只认上面这几行
+        lockDefaults: true
