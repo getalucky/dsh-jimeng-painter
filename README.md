@@ -26,12 +26,12 @@ jimeng_paint
 ## 安装
 
 ```powershell
-dsh plugin --profile desktop add "link:D:\dsh-plugins\dsh-jimeng-painter"
+dsh plugin --profile desktop add "link:<本仓库路径>"
 ```
 
-然后在 `D:\DSH\profiles\desktop\package.json` 的 `dsh.profile.bundles` 里加上 `"dsh-jimeng-painter"`，重启 DSH。
+然后在 `$DSH_HOME/profiles/desktop/package.json` 的 `dsh.profile.bundles` 里加上 `"dsh-jimeng-painter"`，重启 DSH。
 
-首次使用前，插件会用 `profileDir` 启动 Edge；如果没有登录票，会停在即梦登录页，需要你在弹出的窗口里扫码登录一次。
+首次使用前，插件会用 `profileDir` 启动 Edge；留空时默认用 `$DSH_HOME/jimeng-profile`。如果没有登录票，会停在即梦登录页，需要你在弹出的窗口里扫码登录一次。
 
 ## 工具
 
@@ -148,7 +148,7 @@ DSH 设置 → 左侧「即梦生图」（`settings.section`，id `jimeng-painte
 enabled: true
 cdpPort: 9335
 edgeExe: ''          # 留空自动找 Edge
-profileDir: 'D:\DSH\dsh-fish\home\jimeng-probe\profile3'
+profileDir: ''        # 留空默认 $DSH_HOME/jimeng-profile
 timeoutMs: 300000
 outSubdir: jimeng-images
 defaultModel: 'Seedream 5.5'
@@ -160,7 +160,7 @@ defaultStyle: 'auto'
 
 `defaultModel` / `defaultRatio` / `defaultResolution` / `defaultCount` / `defaultStyle` 一般不用手改，在设置页选就行；手改也不会坏，插件会校验并归一化。
 
-换机器时把 `profileDir` 指到自己的独立 Edge profile，首次扫码登录。
+换机器时留空或指到自己的独立 Edge profile，首次扫码登录。
 
 ## 注意
 

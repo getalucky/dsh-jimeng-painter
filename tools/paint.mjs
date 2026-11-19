@@ -4,7 +4,7 @@
  *
  * 用法：
  *   node tools/paint.mjs "一只戴草帽的橘猫"
- *   node tools/paint.mjs "..." --model "Seedream 5.0 Pro" --ratio 3:4 --resolution 2K --count 1 --out "D:\out"
+ *   node tools/paint.mjs "..." --model "Seedream 5.0 Pro" --ratio 3:4 --resolution 2K --count 1 --out ./out
  *   echo '{"prompt":"...","model":"Seedream 5.5"}' | node tools/paint.mjs --stdin-json --json
  */
 import path from 'node:path'

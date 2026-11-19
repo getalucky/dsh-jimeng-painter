@@ -2,7 +2,7 @@
 # dsh-jimeng-painter —— DSH bundle patch
 # ============================================================================
 # 安装（本地开发，link 到源码目录）：
-#   dsh plugin --profile desktop add "link:D:\dsh-plugins\dsh-jimeng-painter"
+#   dsh plugin --profile desktop add "link:<本仓库路径>"
 # 然后在 profile 的 package.json 的 dsh.profile.bundles 里加入
 # "dsh-jimeng-painter"，重启 DSH 生效。
 # ============================================================================
@@ -16,9 +16,9 @@
         cdpPort: 9335
         # Edge 路径；留空自动找系统安装的 Edge
         edgeExe: ''
-        # 独立 Edge profile。当前机器复用探针里已登录的 profile3；
-        # 换机器请改成自己的路径，首次打开即梦扫码登录。
-        profileDir: 'D:\DSH\dsh-fish\home\jimeng-probe\profile3'
+        # 独立 Edge profile；留空默认用 $DSH_HOME/jimeng-profile。
+        # 也可以指到已有登录态的 profile，首次打开即梦扫码登录。
+        profileDir: ''
         # 单次生成等待上限（毫秒）；5.5 模型通常 30~90 秒
         timeoutMs: 300000
         # 图片默认落在会话工作区的这个子目录
